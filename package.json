@@ -1,0 +1,42 @@
+{
+  "name": "sm-uv",
+  "version": "1.0.0",
+  "description": "semantic release plugin for uv",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "clean": "rm -rf dist",
+    "prepare": "npm run clean && npm run build",
+    "release": "semantic-release"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/semantic-release-uv-plugin.git"
+  },
+  "keywords": [
+    "semantic-release",
+    "plugin",
+    "uv",
+    "pyproject",
+    "python"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "semantic-release": "^23.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vitest": "^3.1.2"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5"
+  }
+}
