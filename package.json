@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/semantic-release-uv-plugin.git"
+    "url": "git+https://github.com/Artessan-Devs/sr-uv-plugin.git"
   },
   "keywords": [
     "semantic-release",
