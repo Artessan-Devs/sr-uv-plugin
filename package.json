@@ -26,8 +26,11 @@
     "pyproject",
     "python"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Casanova J.",
+    "email": "johann@artesssandevs.co"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.15.3",
     "semantic-release": "^23.0.0",
