@@ -1,11 +1,11 @@
 {
-  "name": "sm-uv",
+  "name": "@artessan-devs/sr-uv-plugin",
   "version": "1.0.0",
   "description": "semantic release plugin for uv",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "vite build",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "clean": "rm -rf dist",
@@ -37,9 +37,13 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
+    "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.1.2"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
