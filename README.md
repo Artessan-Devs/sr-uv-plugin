@@ -7,7 +7,7 @@ A [semantic-release](https://semantic-release.gitbook.io/semantic-release/) plug
 Install the plugin from npm:
 
 ```bash
-npm install --save-dev @artesssan-devs/sr-uv-plugin
+npm install --save-dev @artessan-devs/sr-uv-plugin
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ Update your `.releaserc.json` to include the plugin:
     { "name": "dev", "prerelease": true }
   ],
   "plugins": [
-    "@artesssan-devs/sr-uv-plugin",
+    "@artessan-devs/sr-uv-plugin",
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/npm",
