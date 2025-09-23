@@ -3,7 +3,7 @@ import path from 'path';
 import * as toml from '@iarna/toml';
 
 // Semantic Release plugin: verifyConditions step
-export async function verifyConditions(
+async function verifyConditions(
   pluginConfig: any,
   context: { logger: any }
 ) {
@@ -28,7 +28,7 @@ export async function verifyConditions(
 }
 
 // Semantic Release plugin: prepare step
-export async function prepare(
+async function prepare(
   pluginConfig: any,
   context: { nextRelease: { version: string }; logger: any }
 ) {
@@ -41,3 +41,9 @@ export async function prepare(
   fs.writeFileSync(pyprojectPath, newContent);
   context.logger.log(`Updated pyproject.toml version to ${context.nextRelease.version}`);
 }
+
+// CommonJS export for semantic-release compatibility
+module.exports = {
+  verifyConditions,
+  prepare
+};
