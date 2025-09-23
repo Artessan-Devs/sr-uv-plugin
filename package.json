@@ -8,7 +8,7 @@
     "build": "vite build",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "prepare": "npm run clean && npm run build",
     "release": "semantic-release"
   },
@@ -33,6 +33,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.15.3",
+    "rimraf": "^6.0.1",
     "semantic-release": "^23.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
