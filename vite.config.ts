@@ -7,7 +7,7 @@ export default defineConfig({
       entry: 'src/semantic-release-pyproject.ts',
       name: 'SemanticReleasePyproject',
       fileName: 'index',
-      formats: ['cjs', 'es']
+      formats: ['cjs']
     },
     outDir: 'dist',
     emptyOutDir: true,
@@ -16,7 +16,11 @@ export default defineConfig({
         'fs',
         'path',
         '@iarna/toml'
-      ]
+      ],
+      output: {
+        format: 'cjs',
+        exports: 'auto'
+      }
     }
   },
   plugins: [dts({ insertTypesEntry: true })]
