@@ -4,7 +4,7 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/semantic-release-pyproject.ts',
+      entry: 'src/index.ts',
       name: 'SemanticReleasePyproject',
       fileName: 'index',
       formats: ['cjs']
